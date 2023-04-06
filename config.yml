@@ -71,12 +71,12 @@ params:
       - Work
 
     socialIcons:
-        - name: buymeacoffee
-          url: "https://ko-fi.com/heycharlola"
         - name: github
-          url: "https://github.com/charlola"
-        - name: linkedin
-          url: "https://www.linkedin.com/in/heycharlola/"
+          url: "https://github.com/kinakomoti-321"
+        - name: twitter
+          url: "https://twitter.com/Kinakomoti2357"
+        - name: blog
+          url: "https://kinakomoti321.hatenablog.com/archive"
 
       # add more social icons. find more in svg.html file
       # - name: youtube
