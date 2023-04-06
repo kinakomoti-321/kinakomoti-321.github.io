@@ -5,12 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Tags | Portlolio</title>
+<title>GPU Renderer | Portlolio</title>
 <meta name="keywords" content="" />
-<meta name="description" content="">
+<meta name="description" content="GPU Pathtracing Renderer using OptiX. Disney BRDF / GLTF format / Animation Rendering / MIS / OptiX Denoiser">
 <meta name="author" content="Kinankomoti">
-<link rel="canonical" href="/tags/" />
+<link rel="canonical" href="/works/202208optix_renderer/" />
 <link crossorigin="anonymous" href="/assets/css/stylesheet.min.a9d03b93f465f581a1d22dc8a98d36bb5a5055810de2090c66bc5d9124cf4d03.css" integrity="sha256-qdA7k/Rl9YGh0i3IqY02u1pQVYEN4gkMZrxdkSTPTQM=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.27cd435cc9ed6abb4b496581b151804f79f366c412620272bb94e2f5f598ebcc.js" integrity="sha256-J81DXMntartLSWWBsVGAT3nzZsQSYgJyu5Ti9fWY68w="
+    onload="hljs.initHighlightingOnLoad();"></script>
 <link rel="icon" href="/images/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
@@ -18,7 +20,6 @@
 <link rel="mask-icon" href="/images/apple-touch-icon.png">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="/tags/index.xml">
 <noscript>
     <style>
         #theme-toggle,
@@ -58,7 +59,7 @@
 </noscript>
 </head>
 
-<body class="list" id="top">
+<body class="" id="top">
 <script>
     if (localStorage.getItem("pref-theme") === "dark") {
         document.body.classList.add('dark');
@@ -119,10 +120,36 @@
         </ul>
     </nav>
 </header>
-<main class="main"> 
-<header class="page-header"><div class="breadcrumbs"><a href="">Home</a></div>
-  <h1>Tags</h1>
-</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="">Home</a></div>
+    <h1 class="post-title">
+      GPU Renderer
+    </h1>
+    <div class="post-description">
+      GPU Pathtracing Renderer using OptiX. Disney BRDF / GLTF format / Animation Rendering / MIS / OptiX Denoiser
+    </div>
+    <div class="post-meta"><span title='2022-08-01 02:00:41 +0900 JST'>August 1, 2022</span>&nbsp;·&nbsp;0 min&nbsp;·&nbsp;Kinankomoti</div>
+  </header> 
+
+
+  <footer class="post-footer">
+
+<div class="share-buttons">
+
+    <a target="_blank" rel="noopener noreferrer" aria-label="share GPU Renderer on linkedin"
+        href="https://www.linkedin.com/in/heycharlola/">
+        <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
+            <path
+                d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+        </svg>
+    </a>
+</div>
+
+  </footer>
+</article>
     </main>
     
 <footer class="footer">
@@ -189,6 +216,53 @@
         }
     })
 
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerText = 'copy';
+
+        function copyingDone() {
+            copybutton.innerText = 'copied!';
+            setTimeout(() => {
+                copybutton.innerText = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
