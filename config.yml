@@ -8,9 +8,6 @@ menu:
     main:
         - name: Contact
           url: /contact/
-          weight: 30
-        - name: Articles
-          url: /articles/
           weight: 20
         - name: Works
           url: /works/
@@ -22,9 +19,7 @@ menu:
 params:
     author: Kinankomoti
 
-
     defaultTheme: auto
-    # disableThemeToggle: true
     ShowShareButtons: true
     ShowReadingTime: true
     displayFullLangName: true
@@ -33,7 +28,7 @@ params:
     ShowToc: true
 
     profileMode:
-        # Disable to populate home page with 'mainSections' content
+
         enabled: true
         title: Kinankomoti 
         description: |
@@ -48,14 +43,10 @@ params:
           
           Interested in 3DCG, especially ray tracing. Currently job hunting.
 
-
-
           C++/GLSL/Unity HLSL
 
         imageUrl: "/images/profile.png"
         imageTitle: my image
-        # imageWidth: 120
-        # imageHeight: 120
 
     mainSections:
       - Work
