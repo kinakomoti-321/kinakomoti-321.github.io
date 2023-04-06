@@ -1,0 +1,3 @@
+baseURL: 
+theme: charlolamode
+publishDir: "docs"
