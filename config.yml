@@ -1,6 +1,6 @@
 baseURL:
 publishDir: "docs"
-title: charlola.mode
+title: Portlolio
 paginate: 5
 theme: charlolamode
 
@@ -18,16 +18,6 @@ menu:
         - name: About 
           url: /about/
           weight: 1
-
-
-     # - name: Categories
-        #   url: /categories/
-        #   weight: 10
-        # - name: new Tab
-        #   url: /newtab/
-        #   weight: defines order of tabs
-   
-
 
 params:
     author: Kinankomoti
@@ -78,16 +68,6 @@ params:
         - name: blog
           url: "https://kinakomoti321.hatenablog.com/archive"
 
-      # add more social icons. find more in svg.html file
-      # - name: youtube
-      #   url: yoururl
-      # - name: twitter
-      #   url: yoururl
-      # - name: facebook
-      #   url: yoururl
-
-
-    # change favicon in images folder (icon for web tab)
     assets:
           favicon: "/images/favicon.ico"
           favicon16x16: "/images/favicon-16x16.png"
