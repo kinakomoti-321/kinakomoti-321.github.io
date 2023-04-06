@@ -14,7 +14,11 @@ menu:
           weight: 20
         - name: Works
           url: /works/
-          weight: 20
+          weight: 10
+        - name: About 
+          url: /about/
+          weight: 1
+
 
      # - name: Categories
         #   url: /categories/
@@ -62,11 +66,9 @@ params:
         imageTitle: my image
         # imageWidth: 120
         # imageHeight: 120
-        buttons:
-            - name: Don't click me
-              url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+
     mainSections:
-      - articles
+      - Work
 
     socialIcons:
         - name: buymeacoffee
