@@ -12,6 +12,9 @@ menu:
         - name: Articles
           url: /articles/
           weight: 20
+        - name: Works
+          url: /works/
+          weight: 20
 
      # - name: Categories
         #   url: /categories/
