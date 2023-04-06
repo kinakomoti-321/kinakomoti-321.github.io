@@ -3,6 +3,7 @@ Title: Contact
 type: list
 ---
 
+e-mail : kinakomoti743@gmail.com
 
-test
+Twitter : @Kinakomoti2357
 

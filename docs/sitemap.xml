@@ -33,6 +33,10 @@
   </url>
   
   <url>
+    <loc>/about/</loc>
+  </url>
+  
+  <url>
     <loc>/articles/</loc>
   </url>
   
@@ -46,10 +50,6 @@
   
   <url>
     <loc>/projects/math-brain-trainer/</loc>
-  </url>
-  
-  <url>
-    <loc>/about/</loc>
   </url>
   
   <url>
