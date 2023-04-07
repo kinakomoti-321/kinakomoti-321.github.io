@@ -10,6 +10,7 @@ type: list
 現在就活中です。
 
 ## Skill
+
 - Physics
 
 - Computer Graphics
@@ -18,4 +19,12 @@ type: list
 
 - Shader Development
 
+- Modeling(Blender,Houdini,Substance painter)
+
 C++/Python/GLSL/Unity HLSL
+
+## Activity
+
+### Internship
+
+- Polyphony Digital : 2023/2
