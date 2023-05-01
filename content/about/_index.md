@@ -24,7 +24,5 @@ type: list
 C++/Python/GLSL/Unity HLSL
 
 ## Activity
-
-### Internship
-
-- Polyphony Digital : 2023/2
+- Demo party "Sessions" : GLSL comp 5th 2023/4
+- Polyphony Digital : Internship 2023/2
